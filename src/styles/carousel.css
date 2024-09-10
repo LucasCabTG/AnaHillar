@@ -1,0 +1,69 @@
+.carrusel {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.contenedor-imagenes {
+  width: 100%;
+  height: 90vh; /* Ajusta esta altura según tus necesidades */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagen-activa {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.imagen-oculta {
+  display: none;
+}
+
+.flecha {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  font-size: 40px;
+  color: #ccc;
+  transition: 0.3s ease-in-out;
+}
+
+.flecha:hover {
+  color: #fff;
+}
+
+.flecha.izquierda {
+  left: 10px;
+}
+
+.flecha.derecha {
+  right: 10px;
+}
+
+.puntos {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+}
+
+.punto {
+  margin: 0 5px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+}
+
+.punto.activo {
+  background-color: #000;
+}

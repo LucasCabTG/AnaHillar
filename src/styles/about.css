@@ -1,0 +1,67 @@
+/* About.css */
+.about-container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .img-about {
+    flex: 2;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 3vh;
+  }
+  
+  .img-about > img {
+    max-width: 100%;
+    margin-bottom: 1vh;
+  }
+  
+  .text-about {
+    flex: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  
+  .text-about > p {
+    max-width: 80%;
+    text-align: left;
+  }
+  
+  .cv > p {
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+    padding-bottom: 10vh;
+  }
+  
+  /* Media query para hacerlo responsive */
+  @media (max-width: 768px) {
+    .about-container {
+      flex-direction: column;
+    }
+  
+    .img-about,
+    .text-about > p,
+    .cv > p
+     {
+      width: 100%;
+    }
+  
+    .text-about > p,
+    .cv > p {
+      max-width: 100%;
+    }
+
+    .img-about{
+        align-items: center;
+        justify-content: center;
+    }
+  }
+  
